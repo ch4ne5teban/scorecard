@@ -1,1 +1,1 @@
-# basketball-scorecard
+# scorecard
