@@ -19,19 +19,26 @@
         <form action="">
           <label for="new-goal">New Goal:</label>
           <input type="text" title="habit" placeholder="Enter Your Goal, e.g. Become Physically Active" maxlength="50">
-          <label for="time">Time:</label>
-          <input type="radio" title="time" id="days" name="time" value="days">
+          <!--Convert Time input into countdown timer-->
+          <h4>In</h4>
+          <input type="number" title="time" id="days" name="time" value="days">
           <label>days</label>
-          <input type="radio" title="time" id="weeks" name="time" value="weeks">
-          <label>weeks</label>
-          <input type="radio" title="time" id="months" name="time" value="months">
-          <label>months</label>
           <label for="specific-step">Specific Measurable Baby Step Every Day</label>
-          <input type="text" title="habit" placeholder="Do 3 pushups a day" maxlength="50"></input>
+          <input type="text" title="baby-step" placeholder="Do 3 pushups a day" maxlength="50"></input>
           <input type="submit" id="user-input" value="Submit">
         </form>
       </section>
-
+      <section>
+        <h3>DAILY POINTS</h3>
+        <h4>Did you <span id="baby-step"></span>?</h4>
+        <button type="button">+0</button>
+        <button type="button">+1</button>
+        <button type="button">+2</button>
+        <button type="button">+3</button>
+        <input>0</input>
+        <button type="submit">Submit</button>
+      </section>
+      <!--Add Table with columns for days of the week and total. The points from input field above should go into the calendar input fields for each day. Compute the total in an output field at the end of the week-->
     </div>
 
   </main>
